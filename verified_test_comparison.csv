@@ -1,0 +1,3 @@
+model,test_accuracy,test_macro_f1,test_balanced_accuracy,test_samples,status
+ResNet18 + Tuned SVM,0.962,0.9638,0.9675,711,Earlier test evaluation; feature pipeline differed
+ResNet18 + PSO-SVM,0.9620253164556962,0.9640309847249423,0.9674145099558702,711,Final evaluation; test set previously inspected during development

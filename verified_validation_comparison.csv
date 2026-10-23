@@ -1,0 +1,13 @@
+model,experiment_type,validation_accuracy,validation_macro_f1,validation_balanced_accuracy,result_status
+ResNet18 — Mild Augmentation,CNN classifier,0.945161,0.942852,,Best validation epoch
+ResNet18 — Strong Augmentation,CNN classifier,0.967742,0.967618,,Best validation epoch
+DOCNN-inspired CNN,Custom CNN,0.901613,0.897495,,Best checkpoint result
+ViT-B/16,Transformer classifier,0.946774,0.945879,,Best validation epoch
+CNN–ViT Fusion,Feature fusion classifier,0.969355,0.968639,,Best validation epoch
+ResNet18 + Tuned SVM,Deterministic deep features + RBF SVM,0.970968,0.97038,0.970135,Best grid-search configuration
+ResNet18 + Random Forest,Deep features + Random Forest,0.969355,0.969073,,Best tested configuration
+ResNet50 + Tuned SVM,Deep features + RBF SVM,0.956452,0.955642,0.956725,Best grid-search configuration
+CNN–ViT Fused Features + SVM,Fused features + RBF SVM,0.966129,0.965119,,Best tested configuration
+ResNet18 + PSO-SVM,Deep features + PSO-optimized RBF SVM,0.974194,0.974384,0.975018,Selected leading candidate
+CNN–ViT Fusion + PSO,Retrained fusion classifier,0.967742,0.966895,,Best retraining epoch
+CNN–ViT Fusion + GA,GA search candidate,,0.968672,,Search fitness only; not final retrained model
